@@ -1,0 +1,8 @@
+.circle:hover{
+background-color: rgb(49, 119, 175);
+    
+}
+
+.shadow{
+    box-shadow: 2px black;
+}
