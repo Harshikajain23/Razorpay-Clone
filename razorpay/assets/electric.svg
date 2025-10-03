@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+  <!-- Blue Circle Background -->
+  <circle cx="22" cy="22" r="22" fill="#2B84EA"/>
+
+  <!-- Sharp Electric Zigzag Bolt -->
+  <path 
+    d="M27 13 L19 24 H23 L17 33 L28 21 H24 L27 13 Z" 
+    fill="#2B84EA" 
+    stroke="white" 
+    stroke-width="1.3" 
+    stroke-linejoin="round"/>
+</svg>
