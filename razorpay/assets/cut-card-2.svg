@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Card with deep top-right corner cut -->
+  <polygon filter="url(#shadow)"
+           points="0,0 280,0 360,100 360,220 0,220"
+           fill="#181c2e"
+           stroke="#7f808747"
+           stroke-width="1"/>
+</svg>
