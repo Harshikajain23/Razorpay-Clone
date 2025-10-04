@@ -35,7 +35,6 @@
     --leading-normal: 1.5;
     --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
-    --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -209,6 +208,9 @@
   .-top-\[142px\] {
     top: calc(142px * -1);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
@@ -239,9 +241,6 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-3 {
-    bottom: calc(var(--spacing) * 3);
-  }
   .bottom-12 {
     bottom: calc(var(--spacing) * 12);
   }
@@ -257,38 +256,14 @@
   .left-\[300px\] {
     left: 300px;
   }
-  .-z-\[1\] {
-    z-index: calc(1 * -1);
-  }
-  .-z-\[5\] {
-    z-index: calc(5 * -1);
-  }
   .-z-\[10\] {
     z-index: calc(10 * -1);
-  }
-  .-z-\[19\] {
-    z-index: calc(19 * -1);
-  }
-  .-z-\[20\] {
-    z-index: calc(20 * -1);
-  }
-  .-z-\[30\] {
-    z-index: calc(30 * -1);
-  }
-  .-z-\[60\] {
-    z-index: calc(60 * -1);
   }
   .-z-\[100\] {
     z-index: calc(100 * -1);
   }
-  .-z-\[1000\] {
-    z-index: calc(1000 * -1);
-  }
   .z-0 {
     z-index: 0;
-  }
-  .z-1 {
-    z-index: 1;
   }
   .z-10 {
     z-index: 10;
@@ -302,23 +277,8 @@
   .z-100 {
     z-index: 100;
   }
-  .z-1000 {
-    z-index: 1000;
-  }
-  .z-\[-1\] {
-    z-index: -1;
-  }
-  .z-\[1\] {
-    z-index: 1;
-  }
-  .z-\[5\] {
-    z-index: 5;
-  }
   .z-\[8\] {
     z-index: 8;
-  }
-  .z-\[10\] {
-    z-index: 10;
   }
   .z-\[90\] {
     z-index: 90;
@@ -326,17 +286,20 @@
   .z-\[100\] {
     z-index: 100;
   }
-  .m-4 {
-    margin: calc(var(--spacing) * 4);
-  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
   }
   .-mt-4 {
     margin-top: calc(var(--spacing) * -4);
   }
   .-mt-30 {
     margin-top: calc(var(--spacing) * -30);
+  }
+  .-mt-\[200px\] {
+    margin-top: calc(200px * -1);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -347,29 +310,29 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
-  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
-  }
-  .mt-30 {
-    margin-top: calc(var(--spacing) * 30);
-  }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
   }
   .mt-\[109px\] {
     margin-top: 109px;
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-18 {
     margin-bottom: calc(var(--spacing) * 18);
@@ -419,6 +382,15 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -458,9 +430,6 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
@@ -481,6 +450,9 @@
   }
   .w-\[270px\] {
     width: 270px;
+  }
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-\[1080px\] {
     width: 1080px;
@@ -505,6 +477,9 @@
   }
   .max-w-\[1080px\] {
     max-width: 1080px;
+  }
+  .max-w-\[calc\(100\%-500px\)\] {
+    max-width: calc(100% - 500px);
   }
   .flex-grow {
     flex-grow: 1;
@@ -546,11 +521,17 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-baseline {
     justify-content: baseline;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-evenly {
     justify-content: space-evenly;
@@ -620,6 +601,9 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .overflow-y-hidden {
+    overflow-y: hidden;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -648,6 +632,9 @@
   }
   .bg-\[\#181c2e\] {
     background-color: #181c2e;
+  }
+  .bg-\[\#f5f8fe\] {
+    background-color: #f5f8fe;
   }
   .bg-deepBlue {
     background-color: var(--color-deepBlue);
@@ -682,20 +669,11 @@
   .bg-\[url\(assets\/payment-button-bg\.svg\)\] {
     background-image: url(assets/payment-button-bg.svg);
   }
-  .bg-\[url\(assets\/upi-autopay-bg\)\] {
-    background-image: url(assets/upi-autopay-bg);
-  }
   .bg-\[url\(assets\/upi-autopay-bg\.svg\)\] {
     background-image: url(assets/upi-autopay-bg.svg);
   }
-  .bg-auto {
-    background-size: auto;
-  }
   .bg-cover {
     background-size: cover;
-  }
-  .bg-center {
-    background-position: center;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -705,6 +683,9 @@
   }
   .stroke-1 {
     stroke-width: 1;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .object-fill {
     object-fit: fill;
@@ -748,8 +729,8 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
-  .pt-30 {
-    padding-top: calc(var(--spacing) * 30);
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
   }
   .pt-\[10rem\] {
     padding-top: 10rem;
@@ -760,8 +741,8 @@
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
   }
-  .pb-30 {
-    padding-bottom: calc(var(--spacing) * 30);
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
   }
   .pb-\[400px\] {
     padding-bottom: 400px;
@@ -954,31 +935,10 @@
       }
     }
   }
-  .hover\:bg-\[url\(\/assets\/instant-settlement-bghover\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(/assets/instant-settlement-bghover.svg);
-      }
-    }
-  }
-  .hover\:bg-\[url\(\/assets\/instantsettlement-bghover\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(/assets/instantsettlement-bghover.svg);
-      }
-    }
-  }
   .hover\:bg-\[url\(assets\/instant-settlement-bghover\.svg\)\] {
     &:hover {
       @media (hover: hover) {
         background-image: url(assets/instant-settlement-bghover.svg);
-      }
-    }
-  }
-  .hover\:bg-\[url\(assets\/instantsettlement-bghover\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(assets/instantsettlement-bghover.svg);
       }
     }
   }
@@ -996,24 +956,10 @@
       }
     }
   }
-  .hover\:bg-\[url\(assets\/magic-checkout-hoverbg\.svg\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(assets/magic-checkout-hoverbg.svg.svg);
-      }
-    }
-  }
   .hover\:bg-\[url\(assets\/payment-button-hoverbg\.svg\)\] {
     &:hover {
       @media (hover: hover) {
         background-image: url(assets/payment-button-hoverbg.svg);
-      }
-    }
-  }
-  .hover\:bg-\[url\(assets\/upi-autopay-bghover\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(assets/upi-autopay-bghover.svg);
       }
     }
   }
