@@ -14,21 +14,12 @@ It helped me strengthen my frontend skills and gain deeper confidence in buildin
 
 ---
 
-##Branch Information
+## Branch Information
 > The complete source code is available in the **`master`** branch.
 
 ---
 
 ## Project Preview
-![Project Preview](Assets/thumbnail.JPG)
+![Project Preview](razorpay/assets/thumbnail.JPG)
 
 ---
-
-
----
-
-## How to Run Locally
-```bash
-git clone https://github.com/Harshikajain23/Razorpay-Clone.git
-cd Razorpay-Clone
-git checkout master
