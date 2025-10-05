@@ -20,7 +20,7 @@ It helped me strengthen my frontend skills and gain deeper confidence in buildin
 ---
 
 ## Project Preview
-![Project Preview](assets/thumbnail.JPG)
+![Project Preview](razorpay/assets/thumbnail.JPG)
 
 ---
 
