@@ -15,11 +15,9 @@ It helped me strengthen my frontend skills and gain deeper confidence in buildin
 ---
 
 ## Branch Information
-> The complete source code is available in the **`master`** branch.
+## The complete source code is available in the **`master`** branch.
 
 ---
 
-## Project Preview
-![Project Preview](razorpay/assets/thumbnail.JPG)
 
 ---
