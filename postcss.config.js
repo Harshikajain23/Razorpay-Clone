@@ -1,10 +1,8 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./*.html",       // all HTML files in root
-    "./**/*.html",    // all HTML files in subfolders
-    "./**/*.js"       // all JS files
+  plugins: [
+    require('@tailwindcss/postcss'),
+    require('autoprefixer'),
   ],
-  theme: { extend: {} },
-  plugins: [],
-};
+}
+
+
