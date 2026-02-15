@@ -1,4 +1,4 @@
-[!Image](razorpay-1.JPG)
+![Image](razorpay-1.JPG)
 
 # Razorpay UI Clone
 
