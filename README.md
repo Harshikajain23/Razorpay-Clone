@@ -4,4 +4,4 @@
 
 A modern, responsive clone of Razorpay’s UI, built entirely with Tailwind CSS. This project is focused on recreating the landing page, features section, and other core UI components using utility-first styling. Perfect for practice, portfolio, or learning Tailwind CSS layouts and components.
 
-[Click here](https://razorpay-clone-bfvr.vercel.app/)
+[Click here for demo](https://razorpay-clone-bfvr.vercel.app/)
